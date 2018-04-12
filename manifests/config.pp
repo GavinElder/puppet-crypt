@@ -5,6 +5,7 @@ class crypt::config {
   $remove_plist         = $crypt::remove_plist
   $payload_organization = $crypt::payload_organization
   $output_path          = $crypt::output_path
+  $skip_users           = $crypt::skip_users
 
   $profile = {
     'PayloadContent' => [
@@ -17,6 +18,7 @@ class crypt::config {
                   'ServerURL' => $server_url,
                   'RemovePlist' => $remove_plist,
                   'OutputPath' => $output_path,
+                  'SkipUSers' => $skip_users,
                 }
               }
             ]
